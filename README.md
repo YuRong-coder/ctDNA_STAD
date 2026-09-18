@@ -88,3 +88,19 @@ Rscript Figure5_analysis.R
 The script produces the univariable Cox forest plot (A), multivariable Cox
 forest plot (B), LASSO risk-group Kaplan-Meier curve (C), and paired
 tumor-versus-normal expression analysis (D) under `output/Figure5/`.
+
+## Figure 6
+
+Copy the existing GEO directory trees into:
+
+- `data/Figure6/GEO/`
+- `data/Figure6/GEO2/`
+
+Then run:
+
+```bash
+Rscript Figure6_analysis.R
+```
+
+Independent GEO-cohort survival validation results, audit tables, and
+intermediate data are written under `output/Figure6/`.
