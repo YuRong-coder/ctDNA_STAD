@@ -35,3 +35,19 @@ Rscript Figure2_analysis.R
 ```
 
 Panels A-D and their intermediate tables are written to `output/Figure2/`.
+
+## Figure 3
+
+Place the following input files in `data/`:
+
+- `gastric_maf_with_clinical.rds`
+- `oncoplot_matrix_TCGA_STAD.txt`
+- `gastric_TME_gene_literature_support_intersection_optimized_60.csv`
+
+Then run:
+
+```bash
+Rscript Figure3_analysis.R
+```
+
+Panels A-D are written to separate subdirectories under `output/Figure3/`.
