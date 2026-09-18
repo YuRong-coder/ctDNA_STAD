@@ -51,3 +51,22 @@ Rscript Figure3_analysis.R
 ```
 
 Panels A-D are written to separate subdirectories under `output/Figure3/`.
+
+## Figure 4
+
+Place the following TCGA-STAD/Xena input files in `data/`:
+
+- `TCGA-STAD.somaticmutation_wxs.tsv`
+- `TCGA-STAD.clinical.gz`
+- `TCGA-STAD.survival.gz`
+- `oncoplot_matrix_TCGA_STAD.txt`
+
+Then run:
+
+```bash
+Rscript Figure4_analysis.R
+```
+
+Panel A uses the typed 20-gene waterfall workflow. Panels B-D use the Xena
+Stage, pT and pN dot-plot workflows. Outputs are written to separate
+subdirectories under `output/Figure4/`.
