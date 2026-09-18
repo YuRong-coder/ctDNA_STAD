@@ -70,3 +70,21 @@ Rscript Figure4_analysis.R
 Panel A uses the typed 20-gene waterfall workflow. Panels B-D use the Xena
 Stage, pT and pN dot-plot workflows. Outputs are written to separate
 subdirectories under `output/Figure4/`.
+
+## Figure 5
+
+Place the following TCGA-STAD input files in `data/`:
+
+- `TCGA-STAD.star_tpm.tsv`
+- `TCGA-STAD.survival.gz`
+- `TCGA-STAD.clinical.gz`
+
+Then run:
+
+```bash
+Rscript Figure5_analysis.R
+```
+
+The script produces the univariable Cox forest plot (A), multivariable Cox
+forest plot (B), LASSO risk-group Kaplan-Meier curve (C), and paired
+tumor-versus-normal expression analysis (D) under `output/Figure5/`.
