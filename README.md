@@ -104,3 +104,23 @@ Rscript Figure6_analysis.R
 
 Independent GEO-cohort survival validation results, audit tables, and
 intermediate data are written under `output/Figure6/`.
+
+## Supplementary figures
+
+Run the supplementary analyses independently:
+
+```bash
+Rscript FigureS2_analysis.R
+Rscript FigureS3_analysis.R
+Rscript FigureS4_analysis.R
+```
+
+- Figure S2 reads `gastric_all_samples_clinical_unknown_filled.txt` and
+  `all_exonic_VAF.txt` from `data/`.
+- Figure S3 reads `TCGA-STAD.somaticmutation_wxs.tsv.gz` and
+  `TCGA-STAD.clinical.gz` from `data/`.
+- Figure S4 reads the Figure 5 merged expression-survival table generated under
+  `output/Figure5/AC_prognostic_model/`.
+
+Results are written independently to `output/FigureS2/`, `output/FigureS3/`,
+and `output/FigureS4/`.
