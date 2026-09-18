@@ -124,3 +124,12 @@ Rscript FigureS4_analysis.R
 
 Results are written independently to `output/FigureS2/`, `output/FigureS3/`,
 and `output/FigureS4/`.
+
+Figure S5 is a combined three-panel LASSO/Cox workflow:
+
+```bash
+Rscript FigureS5_analysis.R
+```
+
+It generates the LASSO cross-validation curve (A), selected-gene coefficient
+plot (B), and univariable Cox forest plot (C) under `output/FigureS5/`.
